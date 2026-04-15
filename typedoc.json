@@ -1,0 +1,110 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"entryPoints": ["./lib/index.ts"],
+	"entryPointStrategy": "expand",
+	"out": "./docs/api/",
+	"json": "./docs/api/build.tsdoc.api.json",
+	"name": "ApIgsReport Library",
+	"customDescription": "pure javascript library to automate a ui job to full using SSRS server api",
+	"includeVersion": true,
+	"excludePrivate": true,
+	"excludeProtected": true,
+	"excludeExternals": true,
+	"excludeNotDocumented": true,
+	"excludeInternal": true,
+	"excludeTags": ["@internal", "@alpha", "@beta"],
+	"readme": "./readme.md",
+	"plugin": [
+		"typedoc-plugin-rename-defaults",
+		"typedoc-plugin-extras",
+		"typedoc-plugin-missing-exports",
+		"typedoc-plugin-coverage",
+		"typedoc-plugin-markdown",
+		"typedoc-vitepress-theme"
+	],
+	"theme": "default",
+	"sort": ["source-order", "kind", "instance-first", "required-first"],
+	"kindSortOrder": ["Function", "Class", "Interface", "TypeAlias", "Variable", "Enum"],
+	"categorizeByGroup": true,
+	"defaultCategory": "Utilities",
+	"categoryOrder": [
+		"Authentication",
+		"Session Management",
+		"HTTP Helpers",
+		"Cookie Utils",
+		"Error Handling",
+		"Configuration",
+		"Preloader",
+		"Core",
+		"Utilities",
+		"Handlers",
+		"Internal",
+		"*"
+	],
+	"groupOrder": ["Functions", "Classes", "Interfaces", "Type Aliases", "Variables"],
+	"validation": {
+		"notExported": true,
+		"invalidLink": true,
+		"notDocumented": true
+	},
+	"logLevel": "Verbose",
+	"skipErrorChecking": false,
+	"disableSources": false,
+	"sourceLinkTemplate": "https://github.com/neuxdotdev/apigsreport/blob/{gitRevision}/{path}#L{line}",
+	"gitRevision": "master",
+	"navigationLinks": {
+		"GitHub": "https://github.com/neuxdotdev/apigsreport",
+		"npm": "https://www.npmjs.com/package/apigsreport",
+		"Issues": "https://github.com/neuxdotdev/apigsreport/issues",
+		"Changelog": "https://github.com/neuxdotdev/apigsreport/blob/master/CHANGELOG.md"
+	},
+	"sidebarLinks": {
+		"Getting Started": "/modules.html",
+		"API Reference": "/modules.html",
+		"Contributing": "https://github.com/neuxdotdev/apigsreport/blob/master/CONTRIBUTING.md",
+		"Code of Conduct": "https://github.com/neuxdotdev/apigsreport/blob/master/CODE_OF_CONDUCT.md",
+		"License": "https://github.com/neuxdotdev/apigsreport/blob/master/LICENSE"
+	},
+	"favicon": "./assets/favicon/favicon.svg",
+	"searchInComments": true,
+	"searchInDocuments": true,
+	"markdownItOptions": {
+		"html": true,
+		"breaks": true,
+		"linkify": true,
+		"typographer": true
+	},
+	"blockTags": [
+		"@remarks",
+		"@example",
+		"@see",
+		"@param",
+		"@returns",
+		"@throws",
+		"@deprecated",
+		"@since",
+		"@version",
+		"@author",
+		"@license"
+	],
+	"inlineTags": ["@link", "@linkcode", "@linkplain", "@inheritDoc"],
+	"modifierTags": [
+		"@public",
+		"@private",
+		"@protected",
+		"@internal",
+		"@beta",
+		"@alpha",
+		"@experimental",
+		"@readonly",
+		"@override",
+		"@virtual",
+		"@abstract"
+	],
+	"visibilityFilters": {
+		"protected": false,
+		"private": false,
+		"inherited": true,
+		"external": false
+	}
+}

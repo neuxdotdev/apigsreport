@@ -1,0 +1,189 @@
+[
+	{
+		"text": "Functions",
+		"collapsed": true,
+		"items": [
+			{
+				"text": "renderReport",
+				"link": "/api/functions/renderReport"
+			},
+			{
+				"text": "testAuth",
+				"link": "/api/functions/testAuth"
+			},
+			{
+				"text": "isApigsError",
+				"link": "/api/functions/isApigsError"
+			},
+			{
+				"text": "createClient",
+				"link": "/api/functions/createClient"
+			},
+			{
+				"text": "getMasterKey",
+				"link": "/api/functions/getMasterKey"
+			},
+			{
+				"text": "getKeyPath",
+				"link": "/api/functions/getKeyPath"
+			},
+			{
+				"text": "encrypt",
+				"link": "/api/functions/encrypt"
+			},
+			{
+				"text": "decrypt",
+				"link": "/api/functions/decrypt"
+			},
+			{
+				"text": "hash",
+				"link": "/api/functions/hash"
+			},
+			{
+				"text": "clearMasterKey",
+				"link": "/api/functions/clearMasterKey"
+			}
+		]
+	},
+	{
+		"text": "Classes",
+		"collapsed": true,
+		"items": [
+			{
+				"text": "SsrsApiClient",
+				"link": "/api/classes/SsrsApiClient"
+			},
+			{
+				"text": "ApigsError",
+				"link": "/api/classes/ApigsError"
+			},
+			{
+				"text": "ConfigError",
+				"link": "/api/classes/ConfigError"
+			},
+			{
+				"text": "AuthError",
+				"link": "/api/classes/AuthError"
+			},
+			{
+				"text": "NetworkError",
+				"link": "/api/classes/NetworkError"
+			},
+			{
+				"text": "ValidationError",
+				"link": "/api/classes/ValidationError"
+			},
+			{
+				"text": "CryptoError",
+				"link": "/api/classes/CryptoError"
+			},
+			{
+				"text": "ExportError",
+				"link": "/api/classes/ExportError"
+			},
+			{
+				"text": "ApigsReportClient",
+				"link": "/api/classes/ApigsReportClient"
+			}
+		]
+	},
+	{
+		"text": "Interfaces",
+		"collapsed": true,
+		"items": [
+			{
+				"text": "RenderOptions",
+				"link": "/api/interfaces/RenderOptions"
+			},
+			{
+				"text": "NtlmCredentials",
+				"link": "/api/interfaces/NtlmCredentials"
+			},
+			{
+				"text": "SsrsResponse",
+				"link": "/api/interfaces/SsrsResponse"
+			},
+			{
+				"text": "Logger",
+				"link": "/api/interfaces/Logger"
+			},
+			{
+				"text": "ApigsReportConfig",
+				"link": "/api/interfaces/ApigsReportConfig"
+			}
+		]
+	},
+	{
+		"text": "Type Aliases",
+		"collapsed": true,
+		"items": [
+			{
+				"text": "ReportFormat",
+				"link": "/api/type-aliases/ReportFormat"
+			},
+			{
+				"text": "LogLevel",
+				"link": "/api/type-aliases/LogLevel"
+			}
+		]
+	},
+	{
+		"text": "Variables",
+		"collapsed": true,
+		"items": [
+			{
+				"text": "Formats",
+				"link": "/api/variables/Formats"
+			},
+			{
+				"text": "configManager",
+				"link": "/api/variables/configManager"
+			},
+			{
+				"text": "envManager",
+				"link": "/api/variables/envManager"
+			},
+			{
+				"text": "logger",
+				"link": "/api/variables/logger"
+			}
+		]
+	},
+	{
+		"text": "Modules",
+		"collapsed": true,
+		"items": [
+			{
+				"text": "<internal>",
+				"link": "/api/-internal-/",
+				"collapsed": true,
+				"items": [
+					{
+						"text": "Classes",
+						"collapsed": true,
+						"items": [
+							{
+								"text": "ConfigManager",
+								"link": "/api/-internal-/classes/ConfigManager"
+							},
+							{
+								"text": "EnvManager",
+								"link": "/api/-internal-/classes/EnvManager"
+							}
+						]
+					},
+					{
+						"text": "Interfaces",
+						"collapsed": true,
+						"items": [
+							{
+								"text": "LoggerOptions",
+								"link": "/api/-internal-/interfaces/LoggerOptions"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

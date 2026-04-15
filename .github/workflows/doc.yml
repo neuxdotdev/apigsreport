@@ -1,0 +1,44 @@
+name: Build and Deploy Docs with Bun
+on:
+    push:
+        branches: [master]
+    workflow_dispatch:
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+concurrency:
+    group: 'pages'
+    cancel-in-progress: false
+jobs:
+    build-and-deploy:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        steps:
+            - name: 📦 Checkout repository
+              uses: actions/checkout@v4
+            - name: 🥯 Setup Bun
+              uses: oven-sh/setup-bun@v2
+              with:
+                  bun-version: latest
+            - name: 📥 Install dependencies
+              run: bun install --frozen-lockfile
+            - name: 🏗️ Build documentation
+              run: bun run docs:build
+            - name: 🔍 Debug:Cek struktur output
+              run: |
+                  echo "=== Docs folder ==="
+                  ls -la ./docs
+                  echo "=== VitePress dist folder ==="
+                  ls -la ./docs/.vitepress/dist 2>/dev/null || echo "⚠️ dist folder not found!"
+            - name: Setup Pages
+              uses: actions/configure-pages@v4
+            - name: 📤 Upload artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: './docs/.vitepress/dist'
+            - name: 🚀 Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4

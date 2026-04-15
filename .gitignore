@@ -91,3 +91,4 @@ build/
 archive/
 dev/
 tmp
+/docs

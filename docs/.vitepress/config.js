@@ -36,7 +36,7 @@ export default {
 	themeConfig: {
 		logo: '/logo.svg',
 		nav: [
-			{ text: 'Home', link: '/api/' },
+			{ text: 'Home', link: '/' },
 			{ text: 'API Reference', link: '/api/globals' },
 			{ text: 'GitHub', link: 'https://github.com/neuxdotdev/apigsreport' },
 			{ text: 'npm', link: 'https://www.npmjs.com/package/apigsreport' },
@@ -48,7 +48,7 @@ export default {
 					items: typedocSidebar,
 				},
 			],
-			'/api/': [
+			'/': [
 				{
 					text: 'Guide',
 					items: [

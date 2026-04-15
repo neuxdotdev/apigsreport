@@ -91,4 +91,4 @@ build/
 archive/
 dev/
 tmp
-/docs
+docs/api

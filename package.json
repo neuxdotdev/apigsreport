@@ -124,7 +124,8 @@
 		"release": "bun run prepublishOnly && npm publish",
 		"release:dry": "bun run prepublishOnly && npm publish --dry-run",
 		"rebuild": "bun run clean && bun run build:lib:prod && bun run format:check",
-		"rebuild:fast": "bun run clean && bun run build:lib:prod"
+		"rebuild:fast": "bun run clean && bun run build:lib:prod",
+		"deploy-gh-pages": "bun run docs:build && gh-pages -d docs/.vitepress/dist -b gh-pages"
 	},
 	"dependencies": {
 		"axios": "^1.15.0",
@@ -155,7 +156,7 @@
 		"gh-pages": "^6.3.0",
 		"husky": "^9.1.7",
 		"minimatch": "^10.2.5",
-		"prettier": "^3.8.2",
+		"prettier": "^3.8.3",
 		"rollup": "^4.60.1",
 		"rollup-plugin-copy": "^3.5.0",
 		"rollup-plugin-dts": "^6.4.1",

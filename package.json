@@ -1,6 +1,6 @@
 {
 	"name": "apigsreport",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "pure javascript library to automate a ui job to full using SSRS server api",
 	"author": {
 		"name": "neuxdotdev",
